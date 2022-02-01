@@ -1,32 +1,43 @@
 function setContent() {
     document.getElementById("title").innerHTML = title;
     document.getElementById("intro").innerHTML = intro;
+    document.getElementById("ablauf").innerHTML = ablauf;
+    document.getElementById("titel_tor").innerHTML = titel_tor;
+    document.getElementById("beschreibung_Tor").innerHTML = beschreibung_Tor;
+    document.getElementById("titel_geschenke").innerHTML = titel_geschenke;
+    document.getElementById("geschenke_brauthaus").innerHTML = geschenke_brauthaus;
+    document.getElementById("altar_braut").innerHTML = altar_braut;
+    document.getElementById("titel_wein").innerHTML = titel_wein;
+    document.getElementById("wein_braut").innerHTML = wein_braut;
+    document.getElementById("titel_betreten").innerHTML = titel_betreten;
+    document.getElementById("braut_betreten").innerHTML = braut_betreten;
+    document.getElementById("titel_raeucher").innerHTML = titel_raeucher;
+    document.getElementById("braut_raeucher").innerHTML = braut_raeucher;
+    document.getElementById("braut_kerzen").innerHTML = braut_kerzen;
+    document.getElementById("titel_ringe").innerHTML = titel_ringe;
+    document.getElementById("braut_ringe").innerHTML = braut_ringe;
+    document.getElementById("titel_mitgift").innerHTML = titel_mitgift;
+    document.getElementById("braut_mitgift").innerHTML = braut_mitgift;
+    document.getElementById("titel_tee").innerHTML = titel_tee;
+    document.getElementById("braut_tee").innerHTML = braut_tee;
+    document.getElementById("titel_betelnuss").innerHTML = titel_betelnuss;
+    document.getElementById("braut_betelnuss").innerHTML = braut_betelnuss;
+    document.getElementById("titel_familie_braut").innerHTML = titel_familie_braut;
+    document.getElementById("braut_familie").innerHTML = braut_familie;
+    document.getElementById("braut_geschenke_zurueck").innerHTML = braut_geschenke_zurueck;
+    document.getElementById("brautigam_0").innerHTML = brautigam_0;
+    document.getElementById("brautigam_1").innerHTML = brautigam_1;
+    document.getElementById("brautigam_2").innerHTML = brautigam_2;
+    document.getElementById("brautigam_3").innerHTML = brautigam_3;
+    document.getElementById("brautigam_4").innerHTML = brautigam_4;
+    document.getElementById("brautigam_5").innerHTML = brautigam_5;
+    document.getElementById("brautigam_6").innerHTML = brautigam_6;
+    document.getElementById("ende").innerHTML = ende;
+    document.getElementById("was_genau").innerHTML = was_genau;
 
-    // document.getElementById("heading_content").innerHTML = welcome_content;
-    // document.getElementById("heading_started").innerHTML = getting_started;
-    // document.getElementById("download_telegram").innerHTML = downloading_telegram;
-    // document.getElementById("starting_bot").innerHTML = starting_bot;
-    // document.getElementById("configuration_bot").innerHTML = configuration_bot;
-    // document.getElementById("heading_instructions").innerHTML = instructions;
-    // document.getElementById("instructions_personalbot").innerHTML = personalbot;
-    // document.getElementById("instructions_enterraidbot").innerHTML = enterraidbot;
-    // document.getElementById("instructions_channel_text").innerHTML = channel_text;
-    // document.getElementById("instructions_channel_pictured").innerHTML = channel_pictured;
-    // document.getElementById("heading_features").innerHTML = features;
-    // document.getElementById("features_manual_raid_input").innerHTML = manual_raid_input;
-    // document.getElementById("features_ex_raid_gyms").innerHTML = ex_raid_gyms;
-    // document.getElementById("features_blacklisting_gyms").innerHTML = blacklisting_gyms;
-    // document.getElementById("heading_bot_status").innerHTML = bot_status;
-    // document.getElementById("bot_status_channel_list").innerHTML = channel_list;
-    // document.getElementById("bot_status_channel_map").innerHTML = channel_map;
-    // document.getElementById("heading_faq").innerHTML = heading_faq;
-    // document.getElementById("faq").innerHTML = faq;
-    // document.getElementById("heading_questions").innerHTML = questions;
-    // document.getElementById("telegram_support_group").innerHTML = telegram_support_group;
-    // document.getElementById("legal_notice").innerHTML = legal_notice;
-    // document.getElementById("main_privacy_policy").innerHTML = main_privacy_policy;
+
 };
-ss
+
 
 var language = "";
 
