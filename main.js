@@ -6,7 +6,7 @@ function setContent() {
     document.getElementById("beschreibung_Tor").innerHTML = beschreibung_Tor;
     document.getElementById("titel_geschenke").innerHTML = titel_geschenke;
     document.getElementById("geschenke_brauthaus").innerHTML = geschenke_brauthaus;
-    document.getElementById("altar_braut").innerHTML = altar_braut;
+    // document.getElementById("altar_braut").innerHTML = altar_braut;
     document.getElementById("titel_wein").innerHTML = titel_wein;
     document.getElementById("wein_braut").innerHTML = wein_braut;
     document.getElementById("titel_betreten").innerHTML = titel_betreten;
@@ -24,6 +24,7 @@ function setContent() {
     document.getElementById("braut_betelnuss").innerHTML = braut_betelnuss;
     document.getElementById("titel_familie_braut").innerHTML = titel_familie_braut;
     document.getElementById("braut_familie").innerHTML = braut_familie;
+    document.getElementById("titel_geschenke_zurueck").innerHTML = titel_geschenke_zurueck;
     document.getElementById("braut_geschenke_zurueck").innerHTML = braut_geschenke_zurueck;
     document.getElementById("brautigam_0").innerHTML = brautigam_0;
     document.getElementById("brautigam_1").innerHTML = brautigam_1;
