@@ -26,295 +26,272 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="main.js "></script>
     <style>
-        .column {
-            width: 49%;
-            margin-right: .5%;
-            min-height: 300px;
-            background: #fff;
-            float: left;
-        }
-        
-        .column .dragbox {
-            margin: 5px 2px 20px;
-            background: #fff;
-            position: relative;
-            border: 1px solid #ddd;
-            -moz-border-radius: 5px;
-            -webkit-border-radius: 5px;
-        }
-        
-        .column .dragbox h2 {
-            margin: 0;
-            font-size: 12px;
-            padding: 5px;
-            background: #f0f0f0;
-            color: #000;
-            border-bottom: 1px solid #eee;
-            font-family: Verdana;
-            cursor: move;
-        }
-        
-        .dragbox-content {
-            background: #fff;
-            min-height: 100px;
-            margin: 5px;
-            font-family: 'Lucida Grande', Verdana;
-            font-size: 0.8em;
-            line-height: 1.5em;
-        }
-        
-        .column .placeholder {
-            background: #f0f0f0;
-            border: 1px dashed #ddd;
-        }
-        
-        .dragbox h2.collapse {
-            background: #f0f0f0 url('collapse.png') no-repeat top right;
-        }
-        
-        .dragbox h2 .configure {
-            font-size: 11px;
-            font-weight: normal;
-            margin-right: 30px;
-            float: right;
-        }
+
     </style>
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v12.0" nonce="v45ULdVn"></script>
     <h1 id="title"></h1>
-    <p id="intro"></p>
-    <p id="ablauf"></p>
-    von: <a href="https://kisswe.com/thong-tin-cuoi/trinh-tu-lam-le-ruoc-dau-dam-cuoi-viet-nam/#" target="_blank">Link</a> <br> übersetzt: bác Du<br>
     <div class="container row">
+        <div class="col-md-6">
+            <p id="ablauf"></p>
 
-        <div class="col-md-12">
-            <!-- <button class="btn btn-danger my-2" id="btn_lang_vn" onclick="console.log('chua lam');">Tieng Viet</button> -->
-            <button class="btn btn-danger my-2" id="btn_lang_vn" onclick="changeLang('vn');">Tieng Viet</button>
-            <!-- <button class="btn btn-primary my-2" id="btn_lang_de" onclick="console.log('noch nicht eingebaut');">Deutsch</button> -->
-            <button class="btn btn-danger my-2" id="btn_lang_vn" onclick="changeLang('de');">Deutsch</button>
-
+            <p id="intro"></p>
+            im Original angelehnt an: <a href="https://kisswe.com/thong-tin-cuoi/trinh-tu-lam-le-ruoc-dau-dam-cuoi-viet-nam/#" target="_blank">Link</a> <br> übersetzt: bác Du<br>
+        </div>
+        <div class="col-md-6 fb-video" data-href="https://www.facebook.com/watch/?v=918041781599054" data-width="500" data-show-text="false">
+            <blockquote cite="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/">MV Cưới Same Day Edit | Thảo Hằng &amp; Minh Thái</a>
+                <p>Khai thác nhạc Việt, đưa nhạc Việt Nam vào những Phim Cưới Phóng Sự của mình vẫn luôn là mục tiêu mà Dragon Films Wedding &amp; Events đang cố gắng theo đuổi. Và kì này Ê-kip đã thử sức mình với bài hát “Anh Là Của Em”. Bằng những ca từ
+                    không quá hoa mỹ, thay vào đó là sự chân thật và pha chút hài hước rất dễ thương, #Anhlacuaem như một lời khẳng định tình cảm của Chú Rể Minh Thái dành cho Cô Dâu Thảo Hằng. “Anh… sẽ không nghi ngờ để tình ta chớm tắt Anh… sẽ không
+                    bao giờ để em rơi nước mắt Anh… sẽ không bao giờ, anh sẽ không bao giờ… để em buồn dù chỉ là vài giây Anh… sẽ lặng im những khi em hay cáu gắt Anh… sẽ yêu em hơn bản thân , anh hứa chắc.” Hành trình đám cưới của cặp đôi Thảo Hằng &amp;
+                    Minh Thái từ Sài Gòn về Nha Trang, và ngược lại. Mặc dù, cả hai rất tất bật chuẩn bị cho đám cưới diễn ra trong suốt mấy ngày liên tiếp, nhưng khi bước vào ngày trọng đại, anh chị vẫn giữ nguyên vẹn cảm xúc bồi hồi, tươi tắn, luôn
+                    trao cho nhau những cử chỉ quan tâm, yêu thương nhau. Và điều mà Chú Rể cố gắng nhất trong ngày cưới của mình là khiến Cô Dâu của anh ấy vui vẻ. Ê-kip chúng tôi được tham dự, chứng kiến đám cưới của họ, cười cùng họ, và đã có lúc cảm
+                    xúc lắng lại khi thấy họ khóc. Mọi thứ thật là tuyệt vời và khiến cho nhiều người phải ganh tỵ với cặp đôi này!!!! Link Vimeo: https://vimeo.com/142721941 Link Youtube: https://youtu.be/XWgAgZ6ZL88 #samedayedit #weddingfilm #weddings
+                    #videos #cinematography #weddingvideography #weddingceremony #weddingengagement #engagement #vietnam #vietnamesewedding #phimcuoi #phimcuoiphongsu #dragonfilms #Anhlacuaem #Karik</p>Gepostet von <a href="https://www.facebook.com/dragonfilmsvn/">Dragon Films Wedding &amp; Events</a>                am Samstag, 7. November 2015</blockquote>
         </div>
     </div>
 
     <hr>
     <div class="container row">
-        <div id="accordion" role="tablist">
-            <div class="card accordion-item">
-                <!--1-->
-                <h6 class="card-header accordion-header" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <!-- <button class="accordion-button">
+
+        <div class="col-md-9">
+
+            <div id="accordion" role="tablist">
+                <div class="card accordion-item">
+                    <!--1-->
+                    <h6 class="card-header accordion-header" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <!-- <button class="accordion-button">
               Button
                 </button> -->
-                    #1
-                    <p id="titel_tor"></p>
-                </h6>
-                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p id="beschreibung_Tor"></p>
-                        <p id="was_genau"></p>
+                        #1
+                        <p id="titel_tor"></p>
+                    </h6>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p id="beschreibung_Tor"></p>
+                            <p id="was_genau"></p>
 
+                            <img src="img/vuquy.jpg" style="width: 50%; height: 50%" />
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--2-->
+                    <h6 class="card-header accordion-header" id="headingTwo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #2
+                        <p id="titel_geschenke"></p>
+                    </h6>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p id="geschenke_brauthaus"></p>
+                            <img src="img/geschenkuebergabe.jpg" style="width: 50%; height: 50%" />
+                        </div>
+                    </div>
+                </div>
+                <!-- ehemals 3 -->
+                <div class="card accordion-item">
+                    <!--4-->
+                    <h6 class="card-header accordion-header" id="headingFour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #4
+                        <p id="titel_wein"></p>
+                    </h6>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p id="wein_braut"></p>
+                            <img src="img/wein.jpg" style="width: 50%; height: 50%" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--5-->
+                    <h6 class="card-header accordion-header" id="headingFive" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #5
+                        <p id="titel_betreten"></p>
+
+                    </h6>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseFive">
+                        <div class="accordion-body">
+                            <p id="braut_betreten"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--6-->
+                    <h6 class="card-header accordion-header" id="headingSix" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #6
+                        <p id="titel_raeucher"></p>
+
+                    </h6>
+                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSix">
+                        <div class="accordion-body">
+                            <p id="braut_raeucher"></p><br>
+                            <p id="braut_kerzen"></p>
+                            <img src="img/kerzen.jpg" style="width: 50%; height: 50%" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--7-->
+                    <h6 class="card-header accordion-header" id="headingSeven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #7
+                        <p id="titel_ringe"></p>
+                    </h6>
+                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSeven">
+                        <div class="accordion-body">
+                            <p id="braut_ringe"></p>
+                            <img src="img/ringe.jpeg" style="width: 50%; height: 50%" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--8-->
+                    <h6 class="card-header accordion-header" id="headingEight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #8
+                        <p id="titel_mitgift"></p>
+
+                    </h6>
+                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseEight">
+                        <div class="accordion-body">
+                            <p id="braut_mitgift"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--9-->
+                    <h6 class="accordion-header card-header" id="headingNine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #9
+                        <p id="titel_tee"></p>
+
+                    </h6>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseNine">
+                        <div class="accordion-body">
+                            <p id="braut_tee"></p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--10-->
+                    <h6 class="card-header accordion-header" id="headingTen" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #10
+                        <p id="titel_betelnuss"></p>
+
+                    </h6>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTen">
+                        <div class="accordion-body">
+                            <p id="braut_betelnuss"></p>
+                            <img src="img/betelnuss.jpg" style="width: 50%; height: 50%" />
+
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--11-->
+                    <h6 class="card-header accordion-header" id="headingEleven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #11
+                        <p id="titel_familie_braut"></p>
+                    </h6>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEleven">
+                        <div class="accordion-body">
+                            <p id="braut_familie"></p><br>
+                            <p id="braut_geschenke_zurueck"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item">
+                    <!--12-->
+                    <h6 class="card-header accordion-header" id="headingTwelve" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #12
+                        <p id="titel_geschenke_zurueck"></p>
+                    </h6>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwelve">
+                        <div class="accordion-body">
+                            <p id="braut_geschenke_zurueck"></p>
+                            <img src="img/geschenke_zurueck.jpg" style="width: 50%; height: 50%" />
+
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card accordion-item">
-                <!--2-->
-                <h6 class="card-header accordion-header" id="headingTwo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #2
-                    <p id="titel_geschenke"></p>
-                </h6>
-                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p id="geschenke_brauthaus"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--3-->
-                <h6 class="card-header accordion-header" id="headingThree" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #3
-                    <p id="altar_braut"></p>
-                </h6>
-                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        Man betritt das Elternhaus
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--4-->
-                <h6 class="card-header accordion-header" id="headingFour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #4
-                    <p id="titel_wein"></p>
-                </h6>
-                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p id="wein_braut"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--5-->
-                <h6 class="card-header accordion-header" id="headingFive" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #5
-                    <p id="titel_betreten"></p>
 
-                </h6>
-                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseFive">
-                    <div class="accordion-body">
-                        <p id="braut_betreten"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--6-->
-                <h6 class="card-header accordion-header" id="headingSix" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #6
-                    <p id="titel_raeucher"></p>
-
-                </h6>
-                <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSix">
-                    <div class="accordion-body">
-                        <p id="braut_raeucher"></p><br>
-                        <p id="braut_kerzen"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--7-->
-                <h6 class="card-header accordion-header" id="headingSeven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #7
-                    <p id="titel_ringe"></p>
-                </h6>
-                <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSeven">
-                    <div class="accordion-body">
-                        <p id="braut_ringe"></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--8-->
-                <h6 class="card-header accordion-header" id="headingEight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #8
-                    <p id="titel_mitgift"></p>
-
-                </h6>
-                <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseEight">
-                    <div class="accordion-body">
-                        <p id="braut_mitgift"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--9-->
-                <h6 class="accordion-header card-header" id="headingNine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #9
-                    <p id="titel_tee"></p>
-
-                </h6>
-                <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseNine">
-                    <div class="accordion-body">
-                        <p id="braut_tee"></p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--10-->
-                <h6 class="card-header accordion-header" id="headingTen" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #10
-                    <p id="titel_betelnuss"></p>
-
-                </h6>
-                <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTen">
-                    <div class="accordion-body">
-                        <p id="braut_betelnuss"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="card accordion-item">
-                <!--10-->
-                <h6 class="card-header accordion-header" id="headingEleven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
-                    <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                    #11
-                    <p id="titel_familie_braut"></p>
-                </h6>
-                <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEleven">
-                    <div class="accordion-body">
-                        <p id="braut_familie"></p><br>
-                        <p id="braut_geschenke_zurueck"></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
+            <hr>
 
 
-        <h3 id="brautigam_0"></h3>
-        <div class="accordion" id="accordionNhaTrai">
-            <div class="accordion-item">
-                <h6 class="accordion-header" id="headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NhaTraiOne" aria-expanded="false" aria-controls="collapseOne">
+            <h3 id="brautigam_0"></h3>
+            <div class="accordion" id="accordionNhaTrai">
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NhaTraiOne" aria-expanded="false" aria-controls="collapseOne">
                   Bräutigam #1
                 </button>
-                </h6>
-                <div id="NhaTraiOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p id="brautigam_1"></p><br>
-                        <p id="brautigam_2"></p><br>
-                        <p id="brautigam_3"></p>
+                    </h6>
+                    <div id="NhaTraiOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p id="brautigam_1"></p><br>
+                            <p id="brautigam_2"></p><br>
+                            <p id="brautigam_3"></p>
 
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="accordion-item">
-                <h6 class="accordion-header" id="headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NhaTraiTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <div class="accordion-item">
+                    <h6 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#NhaTraiTwo" aria-expanded="false" aria-controls="collapseTwo">
                   Bräutigam #2
                 </button>
-                </h6>
-                <div id="NhaTraiTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <p id="brautigam_4"></p><br>
-                        <p id="brautigam_5"></p><br>
-                        <p id="brautigam_6"></p>
+                    </h6>
+                    <div id="NhaTraiTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <p id="brautigam_4"></p><br>
+                            <p id="brautigam_5"></p><br>
+                            <p id="brautigam_6"></p>
+                        </div>
                     </div>
                 </div>
             </div>
-
+        </div>
+        <div class="col-md-3">
+            <button class="btn btn-danger my-2 sticky-top btn-lg" data-spy="affix" id="btn_lang_vn" onclick="changeLang('vn');">Tieng Viet</button>
+            <!-- <button class="btn btn-primary my-2" id="btn_lang_de" onclick="console.log('noch nicht eingebaut');">Deutsch</button> -->
+            <button class="btn btn-dark my-2 sticky-top btn-lg" id="btn_lang_de" onclick="changeLang('de');">Deutsch</button>
         </div>
         <h1 id="ende"></h1>
+
 
         <img src="img/ende.jpg" style="width: 50%; height: 50%" / ">
 </body>
