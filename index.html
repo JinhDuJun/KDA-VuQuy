@@ -63,10 +63,10 @@
     <hr>
     <div class="container row">
 
-        <div class="col-md-9">
+        <div class="col-md-9" id="reihenfolge_zeremonie">
 
             <div id="accordion" role="tablist">
-                <div class="card accordion-item">
+                <div class="card accordion-item" data-order="1">
                     <!--1-->
                     <h6 class="card-header accordion-header" id="headingOne" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <!-- <button class="accordion-button">
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
+                <div class="card accordion-item" data-order="2">
                     <!--2-->
                     <h6 class="card-header accordion-header" id="headingTwo" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
                         <!-- <button class="accordion-button">
@@ -101,16 +101,16 @@
                     </div>
                 </div>
                 <!-- ehemals 3 -->
-                <div class="card accordion-item">
-                    <!--4-->
-                    <h6 class="card-header accordion-header" id="headingFour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                <div class="card accordion-item" data-order="3">
+                    <!--3-->
+                    <h6 class="card-header accordion-header" id="headingThree" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #4
+                        #3
                         <p id="titel_wein"></p>
                     </h6>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                             <p id="wein_braut"></p>
                             <img src="img/wein.jpg" style="width: 50%; height: 50%" />
@@ -118,33 +118,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
+                <div class="card accordion-item" data-order="4">
+                    <!--4-->
+                    <h6 class="card-header accordion-header" id="headingFour" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                        <!-- <button class="accordion-button">
+              Button
+                </button> -->
+                        #4
+                        <p id="titel_betreten"></p>
+
+                    </h6>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseFour">
+                        <div class="accordion-body">
+                            <p id="braut_betreten"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card accordion-item" data-order="5">
                     <!--5-->
                     <h6 class="card-header accordion-header" id="headingFive" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
                         #5
-                        <p id="titel_betreten"></p>
-
-                    </h6>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseFive">
-                        <div class="accordion-body">
-                            <p id="braut_betreten"></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card accordion-item">
-                    <!--6-->
-                    <h6 class="card-header accordion-header" id="headingSix" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
-                        <!-- <button class="accordion-button">
-              Button
-                </button> -->
-                        #6
                         <p id="titel_raeucher"></p>
 
                     </h6>
-                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSix">
+                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseFive">
                         <div class="accordion-body">
                             <p id="braut_raeucher"></p><br>
                             <p id="braut_kerzen"></p>
@@ -153,16 +153,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
-                    <!--7-->
-                    <h6 class="card-header accordion-header" id="headingSeven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
+                <div class="card accordion-item" data-order="6">
+                    <!--6-->
+                    <h6 class="card-header accordion-header" id="headingSix" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #7
+                        #6
                         <p id="titel_ringe"></p>
                     </h6>
-                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSeven">
+                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSix">
                         <div class="accordion-body">
                             <p id="braut_ringe"></p>
                             <img src="img/ringe.jpeg" style="width: 50%; height: 50%" />
@@ -170,50 +170,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
-                    <!--8-->
-                    <h6 class="card-header accordion-header" id="headingEight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
+                <div class="card accordion-item" data-order="7">
+                    <!--7-->
+                    <h6 class="card-header accordion-header" id="headingSeven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #8
+                        #7
                         <p id="titel_mitgift"></p>
 
                     </h6>
-                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseEight">
+                    <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSeven">
                         <div class="accordion-body">
                             <p id="braut_mitgift"></p>
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
-                    <!--9-->
-                    <h6 class="accordion-header card-header" id="headingNine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
+                <div class="card accordion-item" data-order="8">
+                    <!--8-->
+                    <h6 class="accordion-header card-header" id="headingEight" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #9
+                        #8
                         <p id="titel_tee"></p>
 
                     </h6>
-                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseNine">
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEight">
                         <div class="accordion-body">
                             <p id="braut_tee"></p>
 
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
-                    <!--10-->
-                    <h6 class="card-header accordion-header" id="headingTen" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
+                <div class="card accordion-item" data-order="9">
+                    <!--9-->
+                    <h6 class="card-header accordion-header" id="headingNine" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #10
+                        #9
                         <p id="titel_betelnuss"></p>
 
                     </h6>
-                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTen">
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseNine">
                         <div class="accordion-body">
                             <p id="braut_betelnuss"></p>
                             <img src="img/betelnuss.jpg" style="width: 50%; height: 50%" />
@@ -221,32 +221,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
-                    <!--11-->
-                    <h6 class="card-header accordion-header" id="headingEleven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
+                <div class="card accordion-item" data-order="10">
+                    <!--10-->
+                    <h6 class="card-header accordion-header" id="headingTen" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #11
+                        #10
                         <p id="titel_familie_braut"></p>
                     </h6>
-                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEleven">
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTen">
                         <div class="accordion-body">
                             <p id="braut_familie"></p><br>
                             <p id="braut_geschenke_zurueck"></p>
                         </div>
                     </div>
                 </div>
-                <div class="card accordion-item">
-                    <!--12-->
-                    <h6 class="card-header accordion-header" id="headingTwelve" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve">
+                <div class="card accordion-item" data-order="11">
+                    <!--11-->
+                    <h6 class="card-header accordion-header" id="headingEleven" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven">
                         <!-- <button class="accordion-button">
               Button
                 </button> -->
-                        #12
+                        #11
                         <p id="titel_geschenke_zurueck"></p>
                     </h6>
-                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwelve">
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEleven">
                         <div class="accordion-body">
                             <p id="braut_geschenke_zurueck"></p>
                             <img src="img/geschenke_zurueck.jpg" style="width: 50%; height: 50%" />
@@ -296,6 +296,9 @@
             <button class="btn btn-danger my-2 sticky-top btn-lg" data-spy="affix" id="btn_lang_vn" onclick="changeLang('vn');">Tieng Viet</button>
             <!-- <button class="btn btn-primary my-2" id="btn_lang_de" onclick="console.log('noch nicht eingebaut');">Deutsch</button> -->
             <button class="btn btn-dark my-2 sticky-top btn-lg" id="btn_lang_de" onclick="changeLang('de');">Deutsch</button>
+            <br>
+            <button class="btn btn-success my-2 sticky-top btn-lg" id="btn_order" onclick="output_order();">Reihenfolge</button>
+
         </div>
         <h1 id="ende"></h1>
 

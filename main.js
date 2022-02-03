@@ -1,3 +1,5 @@
+var idsInOrder = ["1", "2", "3", "4", "5", "6", "7", "9", "8", "10", "11"];
+
 function setContent() {
     document.getElementById("title").innerHTML = title;
     document.getElementById("intro").innerHTML = intro;
@@ -35,8 +37,6 @@ function setContent() {
     document.getElementById("brautigam_6").innerHTML = brautigam_6;
     document.getElementById("ende").innerHTML = ende;
     document.getElementById("was_genau").innerHTML = was_genau;
-
-
 };
 
 
@@ -87,8 +87,16 @@ $(function() {
         change: function(event, ui) {
             ui.placeholder.css({ visibility: 'visible', border: '5px solid yellow' });
         },
+        stop: function(event, ui) {
+            idsInOrder = $("#accordion").sortable('toArray', { attribute: 'data-order' });
+            console.log(idsInOrder);
+        },
         items: '.card'
     }).bind('sortupdate', function(e, ui) {
         console.log('make ajax');
     });
 });
+
+function output_order() {
+    alert("aktuelle Reihenfolge :" + idsInOrder);
+}
