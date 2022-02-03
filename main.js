@@ -37,6 +37,24 @@ function setContent() {
     document.getElementById("brautigam_6").innerHTML = brautigam_6;
     document.getElementById("ende").innerHTML = ende;
     document.getElementById("was_genau").innerHTML = was_genau;
+    document.getElementById("list_braeutigam").innerHTML = list_braeutigam;
+    document.getElementById("list_braut").innerHTML = list_braut;
+    document.getElementById("list_altar").innerHTML = list_altar;
+    document.getElementById("list_altar2").innerHTML = list_altar2;
+    document.getElementById("list_glaeser").innerHTML = list_glaeser;
+    document.getElementById("list_essen").innerHTML = list_essen;
+    document.getElementById("list_guests").innerHTML = list_guests;
+    document.getElementById("list_braeutigam").innerHTML = list_braeutigam;
+    document.getElementById("list_mitgift").innerHTML = list_mitgift;
+    document.getElementById("list_mitgift2").innerHTML = list_mitgift2;
+    document.getElementById("list_kerzen").innerHTML = list_kerzen;
+    document.getElementById("list_raeucherstaebchen").innerHTML = list_raeucherstaebchen;
+    document.getElementById("list_guests_wife").innerText = list_guests + "";
+    document.getElementById("list_guests").innerText = list_guests;
+    document.getElementById("btn_order").innerText = reihenfolge;
+    document.getElementById("frage").innerText = frage;
+
+
 };
 
 
@@ -98,5 +116,6 @@ $(function() {
 });
 
 function output_order() {
+    $('#input_order').val(idsInOrder);
     alert("aktuelle Reihenfolge :" + idsInOrder);
 }
