@@ -31,33 +31,29 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v12.0" nonce="v45ULdVn"></script>
-    <h1 id="title"></h1>
     <div class="container row">
-        <div class="col-md-6">
+        <div class="col-md-3">
+
+            <button class="btn btn-danger my-2 sticky-top btn-lg" data-spy="affix" id="btn_lang_vn" onclick="changeLang('vn');">Tiếng Việt</button>
+            <!-- <button class="btn btn-primary my-2" id="btn_lang_de" onclick="console.log('noch nicht eingebaut');">Deutsch</button> -->
+            <button class="btn btn-dark my-2 sticky-top btn-lg" id="btn_lang_de" onclick="changeLang('de');">Deutsch</button>
+        </div>
+        <div class="col-md-9"></div>
+
+        <h1 id="title"></h1>
+        <div class="col-md-7">
             <p id="ablauf"></p>
 
             <p id="intro"></p>
             Text im Original angelehnt an: <a href="https://kisswe.com/thong-tin-cuoi/trinh-tu-lam-le-ruoc-dau-dam-cuoi-viet-nam/#" target="_blank">Link</a> <br> übersetzt: bác Du<br>
+            <br>
         </div>
-        <div class="col-md-6">
-            <a href="https://www.youtube.com/watch?v=XWgAgZ6ZL88" target="_blank">YouTube</a><br>
-            <a href="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/" target="_blank">Facebook</a><br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/XWgAgZ6ZL88" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="col-md-3">
 
-            <!-- <a href="https://www.facebook.com/v12.0/plugins/video.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df29d8a64b69d076%26domain%3D127.0.0.1%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252F127.0.0.1%253A5500%252Ff120ec9e36663d8%26relation%3Dparent.parent&container_width=636&href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D918041781599054&locale=de_DE&sdk=joey&show_text=false&width=500">Facebook Video</a>
-            <div class="fb-video" data-href="https://www.facebook.com/watch/?v=918041781599054" data-width="500" data-show-text="false">
-                <blockquote cite="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/">MV Cưới Same Day Edit | Thảo Hằng &amp; Minh Thái</a>
-                    <p>Khai thác nhạc Việt, đưa nhạc Việt Nam vào những Phim Cưới Phóng Sự của mình vẫn luôn là mục tiêu mà Dragon Films Wedding &amp; Events đang cố gắng theo đuổi. Và kì này Ê-kip đã thử sức mình với bài hát “Anh Là Của Em”. Bằng những
-                        ca từ không quá hoa mỹ, thay vào đó là sự chân thật và pha chút hài hước rất dễ thương, #Anhlacuaem như một lời khẳng định tình cảm của Chú Rể Minh Thái dành cho Cô Dâu Thảo Hằng. “Anh… sẽ không nghi ngờ để tình ta chớm tắt Anh…
-                        sẽ không bao giờ để em rơi nước mắt Anh… sẽ không bao giờ, anh sẽ không bao giờ… để em buồn dù chỉ là vài giây Anh… sẽ lặng im những khi em hay cáu gắt Anh… sẽ yêu em hơn bản thân , anh hứa chắc.” Hành trình đám cưới của cặp đôi
-                        Thảo Hằng &amp; Minh Thái từ Sài Gòn về Nha Trang, và ngược lại. Mặc dù, cả hai rất tất bật chuẩn bị cho đám cưới diễn ra trong suốt mấy ngày liên tiếp, nhưng khi bước vào ngày trọng đại, anh chị vẫn giữ nguyên vẹn cảm xúc bồi
-                        hồi, tươi tắn, luôn trao cho nhau những cử chỉ quan tâm, yêu thương nhau. Và điều mà Chú Rể cố gắng nhất trong ngày cưới của mình là khiến Cô Dâu của anh ấy vui vẻ. Ê-kip chúng tôi được tham dự, chứng kiến đám cưới của họ, cười
-                        cùng họ, và đã có lúc cảm xúc lắng lại khi thấy họ khóc. Mọi thứ thật là tuyệt vời và khiến cho nhiều người phải ganh tỵ với cặp đôi này!!!! Link Vimeo: https://vimeo.com/142721941 Link Youtube: https://youtu.be/XWgAgZ6ZL88 #samedayedit
-                        #weddingfilm #weddings #videos #cinematography #weddingvideography #weddingceremony #weddingengagement #engagement #vietnam #vietnamesewedding #phimcuoi #phimcuoiphongsu #dragonfilms #Anhlacuaem #Karik</p>Gepostet von <a href="https://www.facebook.com/dragonfilmsvn/">Dragon Films Wedding &amp; Events</a>                    am Samstag, 7. November 2015</blockquote>
-            </div> -->
+            <b id="frage"></b><br>
+            <img src="img/frage.jpg" style="width: 80%; ">
         </div>
+
     </div>
 
     <hr>
@@ -126,11 +122,12 @@
                 </button> -->
                         #4
                         <p id="titel_betreten"></p>
-
                     </h6>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseFour">
                         <div class="accordion-body">
                             <p id="braut_betreten"></p>
+                            <img src="img/gruss.jpg" style="width: 50%; height: 50%" />
+
                         </div>
                     </div>
                 </div>
@@ -183,6 +180,8 @@
                     <div class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" id="collapseSeven">
                         <div class="accordion-body">
                             <p id="braut_mitgift"></p>
+                            <img src="img/geschenke.jpg" style="width: 50%;" />
+
                         </div>
                     </div>
                 </div>
@@ -194,11 +193,11 @@
                 </button> -->
                         #8
                         <p id="titel_tee"></p>
-
                     </h6>
                     <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEight">
                         <div class="accordion-body">
                             <p id="braut_tee"></p>
+                            <img src="img/trinken.jpg" style="width: 50%; height: 50%" />
 
                         </div>
                     </div>
@@ -217,6 +216,7 @@
                         <div class="accordion-body">
                             <p id="braut_betelnuss"></p>
                             <img src="img/betelnuss.jpg" style="width: 50%; height: 50%" />
+                            <img src="img/essen.jpg" style="width: 50%; height: 50%" />
 
                         </div>
                     </div>
@@ -233,7 +233,8 @@
                     <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTen">
                         <div class="accordion-body">
                             <p id="braut_familie"></p><br>
-                            <p id="braut_geschenke_zurueck"></p>
+                            <img src="img/gruss2.jpg" style="width: 50%; height: 50%" />
+
                         </div>
                     </div>
                 </div>
@@ -249,7 +250,7 @@
                     <div class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseEleven">
                         <div class="accordion-body">
                             <p id="braut_geschenke_zurueck"></p>
-                            <img src="img/geschenke_zurueck.jpg" style="width: 50%; height: 50%" />
+                            <img src="img/pizza.jpg" style="width: 50%; height: 50%" />
 
                         </div>
                     </div>
@@ -293,17 +294,46 @@
             </div>
         </div>
         <div class="col-md-3">
-            <button class="btn btn-danger my-2 sticky-top btn-lg" data-spy="affix" id="btn_lang_vn" onclick="changeLang('vn');">Tieng Viet</button>
-            <!-- <button class="btn btn-primary my-2" id="btn_lang_de" onclick="console.log('noch nicht eingebaut');">Deutsch</button> -->
-            <button class="btn btn-dark my-2 sticky-top btn-lg" id="btn_lang_de" onclick="changeLang('de');">Deutsch</button>
-            <br>
-            <button class="btn btn-success my-2 sticky-top btn-lg" id="btn_order" onclick="output_order();">Reihenfolge</button>
 
+            <br>
+            <button class="btn btn-success my-2 sticky-top btn-lg" id="btn_order" onclick="output_order();">Reihenfolge aktualisieren</button>
+            <input type="text" id="input_order" class="form-control" value="1,2,3,4,5,6,7,9,8,10,11"><br>
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-danger" id="list_braut">ToDo Braut</li>
+                <li class="list-group-item" id="list_altar">Kerzenständer</li>
+                <li class="list-group-item" id="list_altar2">Topf mit Reis</li>
+                <li class="list-group-item" id="list_glaeser">Gläser für Wein und Tee</li>
+                <li class="list-group-item" id="list_essen">Essen für die Gäste</li>
+                <li class="list-group-item" id="list_guests_wife">Gästeliste</li>
+                <li class="list-group-item list-group-item-primary" id="list_braeutigam">ToDo Bräutigam</li>
+                <li class="list-group-item" id="list_mitgift">5 Servierplatten</li>
+                <li class="list-group-item" id="list_mitgift2">5 Tücher zum abdecken</li>
+                <li class="list-group-item" id="list_kerzen">2 große Kerzen</li>
+                <li class="list-group-item" id="list_raeucherstaebchen">1 Packung Räucherstäbchen + Feuer</li>
+                <li class="list-group-item" id="list_guests">Gästeliste</li>
+
+            </ul>
         </div>
         <h1 id="ende"></h1>
+        <img src="img/ende.jpg" style="width: 50%;" / ">
+        <div class="col-md-5 ">
+            <a href="https://www.youtube.com/watch?v=XWgAgZ6ZL88 " target="_blank ">YouTube</a><br>
+            <a href="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/ " target="_blank ">Facebook</a><br>
+            <iframe width="560 " height="315 " src="https://www.youtube.com/embed/XWgAgZ6ZL88 " title="YouTube video player " frameborder="0 " allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
 
-
-        <img src="img/ende.jpg" style="width: 50%; height: 50%" / ">
+            <!-- <a href="https://www.facebook.com/v12.0/plugins/video.php?app_id=&channel=https%3A%2F%2Fstaticxx.facebook.com%2Fx%2Fconnect%2Fxd_arbiter%2F%3Fversion%3D46%23cb%3Df29d8a64b69d076%26domain%3D127.0.0.1%26is_canvas%3Dfalse%26origin%3Dhttp%253A%252F%252F127.0.0.1%253A5500%252Ff120ec9e36663d8%26relation%3Dparent.parent&container_width=636&href=https%3A%2F%2Fwww.facebook.com%2Fwatch%2F%3Fv%3D918041781599054&locale=de_DE&sdk=joey&show_text=false&width=500 ">Facebook Video</a>
+            <div class="fb-video " data-href="https://www.facebook.com/watch/?v=918041781599054 " data-width="500 " data-show-text="false ">
+                <blockquote cite="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/ " class="fb-xfbml-parse-ignore "><a href="https://www.facebook.com/dragonfilmsvn/videos/918041781599054/
+            ">MV Cưới Same Day Edit | Thảo Hằng &amp; Minh Thái</a>
+                    <p>Khai thác nhạc Việt, đưa nhạc Việt Nam vào những Phim Cưới Phóng Sự của mình vẫn luôn là mục tiêu mà Dragon Films Wedding &amp; Events đang cố gắng theo đuổi. Và kì này Ê-kip đã thử sức mình với bài hát “Anh Là Của Em”. Bằng những
+                        ca từ không quá hoa mỹ, thay vào đó là sự chân thật và pha chút hài hước rất dễ thương, #Anhlacuaem như một lời khẳng định tình cảm của Chú Rể Minh Thái dành cho Cô Dâu Thảo Hằng. “Anh… sẽ không nghi ngờ để tình ta chớm tắt Anh…
+                        sẽ không bao giờ để em rơi nước mắt Anh… sẽ không bao giờ, anh sẽ không bao giờ… để em buồn dù chỉ là vài giây Anh… sẽ lặng im những khi em hay cáu gắt Anh… sẽ yêu em hơn bản thân , anh hứa chắc.” Hành trình đám cưới của cặp đôi
+                        Thảo Hằng &amp; Minh Thái từ Sài Gòn về Nha Trang, và ngược lại. Mặc dù, cả hai rất tất bật chuẩn bị cho đám cưới diễn ra trong suốt mấy ngày liên tiếp, nhưng khi bước vào ngày trọng đại, anh chị vẫn giữ nguyên vẹn cảm xúc bồi
+                        hồi, tươi tắn, luôn trao cho nhau những cử chỉ quan tâm, yêu thương nhau. Và điều mà Chú Rể cố gắng nhất trong ngày cưới của mình là khiến Cô Dâu của anh ấy vui vẻ. Ê-kip chúng tôi được tham dự, chứng kiến đám cưới của họ, cười
+                        cùng họ, và đã có lúc cảm xúc lắng lại khi thấy họ khóc. Mọi thứ thật là tuyệt vời và khiến cho nhiều người phải ganh tỵ với cặp đôi này!!!! Link Vimeo: https://vimeo.com/142721941 Link Youtube: https://youtu.be/XWgAgZ6ZL88 #samedayedit
+                        #weddingfilm #weddings #videos #cinematography #weddingvideography #weddingceremony #weddingengagement #engagement #vietnam #vietnamesewedding #phimcuoi #phimcuoiphongsu #dragonfilms #Anhlacuaem #Karik</p>Gepostet von <a href="https://www.facebook.com/dragonfilmsvn/ ">Dragon Films Wedding &amp; Events</a>                    am Samstag, 7. November 2015</blockquote>
+            </div> -->
+        </div>
 </body>
 <script src="main.js "></script>
 
