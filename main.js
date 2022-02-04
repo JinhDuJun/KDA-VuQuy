@@ -5,6 +5,9 @@ function setContent() {
     document.getElementById("intro").innerHTML = intro;
     document.getElementById("ablauf").innerHTML = ablauf;
     document.getElementById("titel_tor").innerHTML = titel_tor;
+    document.getElementById("vorbereitung").innerHTML = vorbereitung;
+    document.getElementById("schritt_0").innerHTML = schritt_0;
+    document.getElementById("schritt_0b").innerHTML = schritt_0b;
     document.getElementById("beschreibung_Tor").innerHTML = beschreibung_Tor;
     document.getElementById("titel_geschenke").innerHTML = titel_geschenke;
     document.getElementById("geschenke_brauthaus").innerHTML = geschenke_brauthaus;
@@ -47,6 +50,7 @@ function setContent() {
     document.getElementById("list_braeutigam").innerHTML = list_braeutigam;
     document.getElementById("list_mitgift").innerHTML = list_mitgift;
     document.getElementById("list_mitgift2").innerHTML = list_mitgift2;
+    document.getElementById("list_mitgifte").innerHTML = list_mitgifte;
     document.getElementById("list_kerzen").innerHTML = list_kerzen;
     document.getElementById("list_raeucherstaebchen").innerHTML = list_raeucherstaebchen;
     document.getElementById("list_guests_wife").innerText = list_guests + "";
@@ -111,7 +115,7 @@ $(function() {
         },
         items: '.card'
     }).bind('sortupdate', function(e, ui) {
-        console.log('make ajax');
+        // console.log('');
     });
 });
 
